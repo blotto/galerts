@@ -29,9 +29,9 @@ module Galerts
         options[:sources].collect do |source|
           raise "Unknown alert source in Array" unless SOURCES_TYPES.has_key?(source)
         end
-      elsif options[:sources].empty?
-        raise "Empty alert source"
-      elsif !SOURCES_TYPES.has_key?(:sources)
+      elsif options[:sources].nil?
+        raise "Nil alert source"
+      elsif !SOURCES_TYPES.has_key?(options[:sources])
         raise "Unknown alert source"    
       end
 
