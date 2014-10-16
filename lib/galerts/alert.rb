@@ -27,7 +27,7 @@ module Galerts
 
       if options[:sources].kind_of?(Array)
         options[:sources].collect do |source|
-          raise "Unknown alert source" unless SOURCES_TYPES.invert.has_key?(source)
+          raise "Unknown alert source" unless SOURCES_TYPES.has_key?(source)
         end
       elsif !options[:sources].empty?
         raise "Unknown alert source"
