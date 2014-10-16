@@ -50,6 +50,7 @@ module Galerts
   DISCUSSIONS = 'Discussions'
 
   SOURCES_TYPES = {
+    AUTOMATIC => 0,
     BLOGS => 1,
     NEWS => 2,
     WEB => 3,
