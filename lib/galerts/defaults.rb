@@ -1,4 +1,11 @@
 module Galerts
+  # Default alert value
+  DOMAIN = 'com'
+  AUTOMATIC = ''
+  LANGUAGE = 'en'
+  REGION = 'US'
+  ANYWHERE = 'anywhere'
+  
   # URLs
   CREATE_ALERT_URL = 'https://www.google.com/alerts/create?'
   DELETE_ALERT_URL = 'https://www.google.com/alerts/delete?'
@@ -60,10 +67,5 @@ module Galerts
   }
 
 
-  # Default alert value
-  DOMAIN = 'com'
-  AUTOMATIC = ''
-  LANGUAGE = 'en'
-  REGION = 'US'
-  ANYWHERE = 'anywhere'
+  
 end
